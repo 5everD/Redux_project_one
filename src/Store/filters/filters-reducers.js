@@ -1,9 +1,10 @@
-import {ADD_FILTER, REMOVE_FILTER, CLEAR_FILTER} from "./filters-actions";
+import { ADD_FILTER, CLEAR_FILTER, REMOVE_FILTER } from './filters-actions';
+
 
 export const filtersReducers = (state = [], action) => {
     switch (action.type) {
         case ADD_FILTER: {
-            if(!state.includes(action.filter)) {
+            if (!state.includes(action.filter)) {
                 return [...state, action.filter];
             }
 
