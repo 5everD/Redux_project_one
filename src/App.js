@@ -1,20 +1,9 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { FilterPanel } from 'components/FilterPanel';
-import { JobList } from 'components/JobList';
+import { FilterPanel } from 'features/filter/FilterPanel';
+import { JobList } from 'features/positions/JobList';
 import { TheHeader } from 'components/TheHeader';
-import { addPositions } from './Store/positions/position-actions'
-import data from './mock/data.json'
 
 
 function App() {
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(addPositions(data));
-    });
-
-
     return (
         <>
             <TheHeader/>

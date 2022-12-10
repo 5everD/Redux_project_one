@@ -5,20 +5,19 @@ import { Stack } from 'UI/Stack';
 
 
 const JobPosition = ({
-    id,
     company,
+    contract,
+    featured,
+    handleAddFilter,
+    languages,
+    level,
+    location,
     logo,
     new: isNew,
-    featured,
     position,
-    role,
-    level,
     postedAt,
-    contract,
-    location,
-    languages,
+    role,
     tools,
-    handleAddFilter,
 }) => {
     const badges = [].concat(role, level, ...languages, ...tools);
 
@@ -70,20 +69,17 @@ const JobPosition = ({
                         <Badge
                             key={item}
                             onClick={() => handleAddFilter(item)}
-                        >
-                            {item}
-                        </Badge>
+                        >{item}</Badge>
                     ))}
                 </Stack>
             </div>
         </Card>
     )
-}
+};
 
 export { JobPosition };
 
 JobPosition.propTypes = {
-    id: PropTypes.number,
     company: PropTypes.string,
     logo: PropTypes.string,
     new: PropTypes.bool,

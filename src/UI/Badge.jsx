@@ -29,4 +29,4 @@ Badge.propTypes = {
     children: PropTypes.node.isRequired,
     onClear: PropTypes.func,
     onClick: PropTypes.func
-};
+}

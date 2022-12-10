@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 100;
     padding: 0 0.75rem;
     margin: 0 auto;
 }
@@ -250,7 +250,7 @@ body {
     .job-position-info {
         padding: 0;
         margin-bottom: 0;
-        border-bottom: 0;
+        border-bottom: 0px;
     }
 
     .job-position-avatar {
